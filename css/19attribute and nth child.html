@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child pseudo selectors</title>
+    <style>
+        .container{
+            display: block;
+            width: 233px;
+            margin: auto;
+        }
+        input{
+            display: block;
+        }
+        input[type='text']{
+            padding: 23px;
+            border: 2px solid red;
+        }
+        a[target]{
+            font-size: 34px;
+            color: violet;
+        }
+        a[target="_self"]{
+            font-size: 15px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: aqua;
+        }
+        li:nth-child(3){
+            color: cyan;
+        }
+        li:nth-child(6){
+            color: rgb(221, 0, 255);
+        }
+        li:nth-child(10){
+            color: rgb(163, 130, 253);
+        }
+        li:nth-child(2){
+            color: rgb(231, 47, 50);
+        }
+        li:nth-child(4){
+            color: rgb(57, 255, 87);
+        }
+        li:nth-child(8){
+            color: rgb(144, 255, 8);
+        }
+        li:nth-child(12){
+            color: rgb(246, 18, 246);
+        }
+        li:nth-child(14){
+            color: rgb(219, 16, 16);
+        }
+        li:nth-child(15){
+            color: rgb(77, 207, 243);
+        }
+        li:nth-child(2n+0){
+            color: red;
+        }
+        li{
+            background-color: hotpink;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> 
+        <h1><a href="http://google.com" target="_blank">Google.com</a></h1>
+        <h1><a href="http://Facebook.com" target="_self">Facebook.com</a></h1>
+        <form action="" class="form-control">
+            <input type="text" placeholder="enter your name">
+            <input type="password" placeholder="enter your password">
+            <input type="submit" value="submit">
+        </form>
+        <ul>
+            <li class="item" id="item1">item1</li>
+            <li class="item" id="item2">item2</li>
+            <li class="item" id="item3">item3</li>
+            <li class="item" id="item4">item4</li>
+            <li class="item" id="item5">item5</li>
+            <li class="item" id="item6">item6</li>
+            <li class="item" id="item7">item7</li>
+            <li class="item" id="item8">item8</li>
+            <li class="item" id="item9">item9</li>
+            <li class="item" id="item10">item10</li>
+            <li class="item" id="item11">item11</li>
+            <li class="item" id="item12">item12</li>
+            <li class="item" id="item13">item13</li>
+            <li class="item" id="item14">item14</li>
+            <li class="item" id="item15">item15</li>
+        </ul>
+    </div>
+    
+</body>
+</html>

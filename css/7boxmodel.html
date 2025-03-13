@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOx model</title>
+    <style>
+        .container{
+            background-color:#ffeed4;
+            border: 3px solid rgb(255, 54, 54);
+            /* we can set margin padding and border top bottom left and right like this */
+            /* padding-left: 5px;
+            padding-right: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px; */
+            /* padding: 9px; for all for sides */
+            /* padding: 9px 14px 9px 14px; for top right bottom left */
+            padding: 10px 20px;/*for x(top and bottom) y(right and left)*/
+            margin: 30px;
+            border-radius: 20px;
+            /* as normally actual width = width + margin +padding using box sizing as border box we can set it actual width =width we given */
+
+            /* width: 400px;
+            box-sizing: border-box; */
+        }
+        body{
+            background-color:#eb99d385;
+        }
+    </style>
+
+</head>
+<body>
+   <div class="container">  
+    <h3>This is my heading</h3>
+    <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque tenetur quo rerum, reprehenderit nam architecto consequuntur impedit laborum quaerat commodi omnis atque doloribus voluptatem repellendus quam quibusdam ex animi iusto quidem reiciendis ducimus molestiae rem pariatur facere? Ducimus, pariatur doloribus!</p>
+   </div> 
+
+   <div class="container">  
+    <h3>This is my heading</h3>
+    <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque tenetur quo rerum, reprehenderit nam architecto consequuntur impedit laborum quaerat commodi omnis atque doloribus voluptatem repellendus quam quibusdam ex animi iusto quidem reiciendis ducimus molestiae rem pariatur facere? Ducimus, pariatur doloribus!</p>
+   </div> 
+
+   <div class="container">  
+    <h3>This is my heading</h3>
+    <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque tenetur quo rerum, reprehenderit nam architecto consequuntur impedit laborum quaerat commodi omnis atque doloribus voluptatem repellendus quam quibusdam ex animi iusto quidem reiciendis ducimus molestiae rem pariatur facere? Ducimus, pariatur doloribus!</p>
+   </div> 
+</body>
+</html>
