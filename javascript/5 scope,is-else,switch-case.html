@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scope and conditional statement</title>
+</head>
+<body>
+    <!-- div>ul>li{Item-$}*6 -->
+    <div>
+        <ul>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+            <li>Item-6</li>
+            <li>Item-7</li>
+        </ul>
+    </div>
+    <script>
+        var string1 = "this is a string";
+        console.log(string1);
+
+
+        // let a = 'u';
+        // let a = 'usdfsdf';
+
+        let a = 'u';
+        {
+        let a = 'usdfsdf';
+        console.log(a); 
+        
+    }
+    console.log(a); 
+
+
+
+    const b = "this can not be change";
+// this can not be changed it will show error
+    // const b ="hello im changing my mind"
+    console.log(b);
+    </script>
+
+
+<script>
+
+    let age = 2;
+    if(age>18){
+        console.log("you can drink water");
+    }
+    else if(age ==2){
+        console.log("age is 2")
+    }
+    else{
+        console.log("you can drink cold drinks ");
+    }
+
+
+
+
+</script>
+
+
+<script>
+
+
+    const cups = 45;
+    switch (cups) {
+        case 4:
+            console.log("the value of cups is 4")
+            break;
+    
+        case 10:
+            console.log("the value of cups is 10")
+            break;
+    
+        case 41:
+            console.log("the value of cups is 41")
+            break;
+    
+        case 14:
+            console.log("the value of cups is 14")
+            break;
+    
+        default:
+            console.log("the value of cups is none of 4,10,14,,41")
+            break;
+    }
+
+
+</script>
+</body>
+</html>
